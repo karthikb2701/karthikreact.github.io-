@@ -1,0 +1,17 @@
+$color-primary: #2f3640;
+
+//text color
+$text-primary: #f5f6fa;
+
+.nav {
+  display: flex;
+  width: 100%;
+  background-color: $color-primary;
+  color: $text-primary;
+  font-size: 2rem;
+  padding: 8px;
+  justify-content: center;
+  -webkit-box-shadow: -1px -1px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px -1px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px -1px 10px 0px rgba(0, 0, 0, 0.7);
+}

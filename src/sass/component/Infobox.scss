@@ -1,0 +1,79 @@
+@import '../abstract/typography.scss';
+@import '../abstract/vairables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Mulish:wght@200;400&family=Roboto+Mono:wght@200;300;400;500&family=Roboto:wght@300;400;500;700&display=swap');
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.col {
+  height: 8rem;
+  text-align: center;
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &__header {
+    font-weight: 500;
+  }
+
+  &__count {
+    text-align: center;
+    margin-top: -5px;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  &--1 {
+    background-color: $bg--4;
+    color: $txt--1;
+
+    &:hover {
+      background-color: darken($bg--4, 2);
+    }
+  }
+
+  &--2 {
+    background-color: $bg--5;
+    color: green;
+
+    &:hover {
+      background-color: darken($bg--5, 2);
+    }
+  }
+
+  &--3 {
+    background-color: $bg--6;
+    color: $txt--3;
+
+    &:hover {
+      background-color: darken($bg--6, 2);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    width: 88vw;
+    margin: 8px;
+    padding: 0;
+    overflow: hidden;
+    justify-content: space-around;
+    // border: 1px solid black;
+    margin-left: 1rem;
+    margin-top: 18px;
+  }
+
+  .col {
+    width: 30%;
+  }
+}

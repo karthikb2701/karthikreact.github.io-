@@ -1,0 +1,35 @@
+@import url('../abstract/typography.scss');
+@import url('../abstract/vairables.scss');
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+}
+
+.select {
+  cursor: pointer;
+  height: 2rem;
+  background-color: #eef5ff;
+  color: blue;
+  padding-left: 3px;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  outline: none;
+}
+
+.options {
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .dropdown {
+    display: flex;
+    justify-content: start;
+  }
+
+  .select {
+    width: 15rem;
+  }
+}
